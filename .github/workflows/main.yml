@@ -40,6 +40,6 @@ jobs:
         
       - name: 'Working'
         run: |
-          sudo cp -p ./chromedriver /usr/bin/
-          chmod -R 777 /usr/bin/chromedriver
+          # sudo cp -p ./chromedriver /usr/bin/
+          # chmod -R 777 /usr/bin/chromedriver
           python ./Spider/bugku.py ${{ secrets.BUGKU_USERNAME }} ${{ secrets.BUGKU_PASSWORD }}
