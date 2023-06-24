@@ -20,5 +20,5 @@ def get_web_driver():
     chromedriver = "/usr/bin/chromedriver"
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chrome_options)
-    driver.implicitly_wait(10) # 所有的操作都可以最长等待10s
+    driver.implicitly_wait(5) # 所有的操作都可以最长等待10s
     return driver
