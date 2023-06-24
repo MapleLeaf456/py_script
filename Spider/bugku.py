@@ -26,7 +26,7 @@ def tav_read():
     with open('./captcha.jpg','rb') as f:
         img_tav = f.read()
     tav = ocr.classification(img_tav)
-    print(tav)
+    # print(tav)
     return tav
 
 def login_click():
