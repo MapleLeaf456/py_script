@@ -34,10 +34,9 @@ def login_click():
     login_ck.click()
 
 def SignIn():
-    o = driver.find_element(By.XPATH, '//*[@id="checkin-status"]/button/del')
+    o = driver.find_element(By.XPATH, '//*[@id="checkin-status"]/button')
     if o.text == "签到":
-        checkin = driver.find_element(By.ID, 'checkin')
-        checkin.click()
+        o.click()
         print("签到")
     else:
         print(o.text)
